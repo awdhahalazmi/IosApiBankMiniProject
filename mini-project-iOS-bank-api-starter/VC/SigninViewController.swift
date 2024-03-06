@@ -75,7 +75,7 @@ class SigninViewController: FormViewController {
         
     
         
-            let user = User(username: name, email: <#T##String#>, password: passsord)
+            let user = User(username: name, email: "", password: passsord)
         
         //NetworkManager.shared.
             }
