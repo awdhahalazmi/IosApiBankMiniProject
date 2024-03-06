@@ -15,11 +15,13 @@ var ButtonSignUp = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home Page"
+        view.backgroundColor = .white
         view.addSubview(ButtonSignUp)
         view.addSubview(ButtonSignIn)
 
         setUpView()
-        
+        constrainsLayout()
     }
     
     func setUpView( ){

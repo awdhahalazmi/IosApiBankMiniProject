@@ -6,24 +6,116 @@
 //
 
 import UIKit
+import Eureka
+import Alamofire
+import Foundation
+import SnapKit
 
-class SignUpViewController: UIViewController {
-
+class SignUpViewController : FormViewController {
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        title = "SignUp Page"
+        
+        setupForm()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupForm() {
+        form +++ Section("SignUp Form")
+        <<< TextRow() { row in
+            row.title = "Username"
+            row.placeholder = "Enter Username"
+            row.tag = "Username"
+            row.add(rule: RuleRequired())
+            row.validationOptions = .validatesOnChange
+            row.cellUpdate { cell, row in
+                if !row.isValid{
+                    cell.titleLabel?.textColor = .red
+                }
+            }
+            
+        }
+        
+        <<< TextRow() { row in
+            row.title = "Password"
+            row.placeholder = "Enter Password"
+            row.tag = "Password"
+            row.add(rule: RuleRequired())
+            row.validationOptions = .validatesOnChange
+            row.cellUpdate { cell, row in
+                if !row.isValid{
+                    cell.titleLabel?.textColor = .red
+                }
+            }
+            
+        }
+        
+        <<< TextRow() { row in
+            row.title = "Email"
+            row.placeholder = "Enter Email"
+            row.tag = "Email"
+            row.add(rule: RuleRequired())
+            row.validationOptions = .validatesOnChange
+            row.cellUpdate { cell, row in
+                if !row.isValid{
+                    cell.titleLabel?.textColor = .red
+                }
+            }
+            
+        }
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(submitTapped))
+        
     }
-    */
+    @objc func submitTapped() {
+          
+       
+       let errors = form.validate()
+               guard errors.isEmpty else {
+                   presentAlertWithTitle(title: "🚨", message: "\(errors.count) fields are missing")
+                   return
+               }
+        
+               let usernameRow : TextRow? = form.rowBy(tag: "Username")
+               let passwordRow :TextRow? = form.rowBy(tag: "Password")
+               let emailRow :TextRow? = form.rowBy(tag: "Email")
 
-}
+               let username = usernameRow?.value ?? ""
+               let password = passwordRow?.value ?? ""
+               let email = emailRow?.value ?? ""
+                   
+               let user = User(username: username, email: email, password: password)
+                   print(user)
+
+        NetworkManager.shared.signup(user: user ){ success in
+            
+            DispatchQueue.main.async {
+         
+                switch success{
+                case .success(let tokenResponse):
+                    print(tokenResponse.token)
+                case .failure(let error):
+                    print(error)
+                }
+                }
+            }
+        }
+
+    private func presentAlertWithTitle(title: String, message: String) {
+                let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                present(alert, animated: true, completion: nil)
+            }
+             
+         }
+       
+
+    
+
+
+
+    
+ 
