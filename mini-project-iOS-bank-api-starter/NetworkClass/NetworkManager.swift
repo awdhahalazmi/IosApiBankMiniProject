@@ -27,7 +27,8 @@ class NetworkManager {
         }
     }
     
-     func signin(user: User, completion: @escaping (Result<TokenResponse, Error>) -> Void) {
+
+     func signIn(user: User, completion: @escaping (Result<TokenResponse, Error>) -> Void) {
         let url = baseUrl + "signin"
         
         AF.request(url, method: .post, parameters: user, encoder: JSONParameterEncoder.default).responseDecodable(of: TokenResponse.self) { response in

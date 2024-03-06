@@ -61,6 +61,7 @@ class SigninViewController: FormViewController {
         }
         
         let user = User(username: username, email: "", password: password)
+
         
         NetworkManager.shared.signin(user: user) { result in
             switch result {

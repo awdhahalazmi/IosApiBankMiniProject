@@ -27,9 +27,17 @@
 		AEC5B6DA2B983A0B0041FA53 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6D92B983A0B0041FA53 /* SnapKit-Dynamic */; };
 		AEC5B6DD2B983A160041FA53 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6DC2B983A160041FA53 /* Kingfisher */; };
 		AEC5B6E02B983A220041FA53 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6DF2B983A220041FA53 /* Eureka */; };
+
 		AEC5B6E22B983C140041FA53 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E12B983C140041FA53 /* HomeViewController.swift */; };
 		AEC5B6E42B983C280041FA53 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E32B983C280041FA53 /* SigninViewController.swift */; };
 		AEC5B6E62B983C6F0041FA53 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */; };
+		D2CF09982B984BC8008FF57A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF09972B984BC8008FF57A /* Alamofire */; };
+		D2CF099A2B984BC8008FF57A /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF09992B984BC8008FF57A /* AlamofireDynamic */; };
+		D2CF099D2B984BD0008FF57A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF099C2B984BD0008FF57A /* SnapKit */; };
+		D2CF099F2B984BD0008FF57A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF099E2B984BD0008FF57A /* SnapKit-Dynamic */; };
+		D2CF09A22B984BD7008FF57A /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF09A12B984BD7008FF57A /* Eureka */; };
+		D2CF09A52B984BE1008FF57A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF09A42B984BE1008FF57A /* Kingfisher */; };
+		D2CF09A92B985675008FF57A /* DepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF09A82B985675008FF57A /* DepositViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,7 @@
 		AEC5B6E12B983C140041FA53 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E32B983C280041FA53 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D2CF09A82B985675008FF57A /* DepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +68,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC5B6D82B983A0B0041FA53 /* SnapKit in Frameworks */,
-				AEC5B6D32B9839FE0041FA53 /* Alamofire in Frameworks */,
-				AEC5B6D52B9839FE0041FA53 /* AlamofireDynamic in Frameworks */,
-				AEC5B6DA2B983A0B0041FA53 /* SnapKit-Dynamic in Frameworks */,
-				AEC5B6DD2B983A160041FA53 /* Kingfisher in Frameworks */,
-				AEC5B6E02B983A220041FA53 /* Eureka in Frameworks */,
+				D2CF09A52B984BE1008FF57A /* Kingfisher in Frameworks */,
+				D2CF09A22B984BD7008FF57A /* Eureka in Frameworks */,
+				D2CF099D2B984BD0008FF57A /* SnapKit in Frameworks */,
+				D2CF09982B984BC8008FF57A /* Alamofire in Frameworks */,
+				D2CF099A2B984BC8008FF57A /* AlamofireDynamic in Frameworks */,
+				D2CF099F2B984BD0008FF57A /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +157,7 @@
 				AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */,
 				AE3F50F42B9854A300D7B416 /* WithdrawViewController.swift */,
 				AE3F50F62B987CEC00D7B416 /* TransactionsTableViewController.swift */,
+				D2CF09A82B985675008FF57A /* DepositViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -169,12 +179,12 @@
 			);
 			name = "mini-project-iOS-bank-api-starter";
 			packageProductDependencies = (
-				AEC5B6D22B9839FE0041FA53 /* Alamofire */,
-				AEC5B6D42B9839FE0041FA53 /* AlamofireDynamic */,
-				AEC5B6D72B983A0B0041FA53 /* SnapKit */,
-				AEC5B6D92B983A0B0041FA53 /* SnapKit-Dynamic */,
-				AEC5B6DC2B983A160041FA53 /* Kingfisher */,
-				AEC5B6DF2B983A220041FA53 /* Eureka */,
+				D2CF09972B984BC8008FF57A /* Alamofire */,
+				D2CF09992B984BC8008FF57A /* AlamofireDynamic */,
+				D2CF099C2B984BD0008FF57A /* SnapKit */,
+				D2CF099E2B984BD0008FF57A /* SnapKit-Dynamic */,
+				D2CF09A12B984BD7008FF57A /* Eureka */,
+				D2CF09A42B984BE1008FF57A /* Kingfisher */,
 			);
 			productName = "mini-project-iOS-bank-api-starter";
 			productReference = 05CF04BC2B97A0AF00672FDF /* mini-project-iOS-bank-api-starter.app */;
@@ -205,10 +215,10 @@
 			);
 			mainGroup = 05CF04B32B97A0AF00672FDF;
 			packageReferences = (
-				AEC5B6D12B9839FE0041FA53 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				AEC5B6D62B983A0B0041FA53 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				AEC5B6DB2B983A160041FA53 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				AEC5B6DE2B983A220041FA53 /* XCRemoteSwiftPackageReference "Eureka" */,
+				D2CF09962B984BC8008FF57A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D2CF099B2B984BD0008FF57A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D2CF09A02B984BD7008FF57A /* XCRemoteSwiftPackageReference "Eureka" */,
+				D2CF09A32B984BE1008FF57A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 05CF04BD2B97A0AF00672FDF /* Products */;
 			projectDirPath = "";
@@ -240,6 +250,7 @@
 				AEC5B6E62B983C6F0041FA53 /* SignUpViewController.swift in Sources */,
 				AE3F50F72B987CED00D7B416 /* TransactionsTableViewController.swift in Sources */,
 				AE3F50F92B987D7100D7B416 /* Transaction.swift in Sources */,
+				D2CF09A92B985675008FF57A /* DepositViewController.swift in Sources */,
 				05CF04C42B97A0AF00672FDF /* ViewController.swift in Sources */,
 				05CF04D42B97A12600672FDF /* customView.swift in Sources */,
 				05CF04D82B97A15200672FDF /* NetworkManager.swift in Sources */,
@@ -473,7 +484,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AEC5B6D12B9839FE0041FA53 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		D2CF09962B984BC8008FF57A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -481,7 +492,7 @@
 				minimumVersion = 5.9.0;
 			};
 		};
-		AEC5B6D62B983A0B0041FA53 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		D2CF099B2B984BD0008FF57A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -489,15 +500,7 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		AEC5B6DB2B983A160041FA53 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.11.0;
-			};
-		};
-		AEC5B6DE2B983A220041FA53 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+		D2CF09A02B984BD7008FF57A /* XCRemoteSwiftPackageReference "Eureka" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/xmartlabs/Eureka";
 			requirement = {
@@ -505,38 +508,46 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		D2CF09A32B984BE1008FF57A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AEC5B6D22B9839FE0041FA53 /* Alamofire */ = {
+		D2CF09972B984BC8008FF57A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AEC5B6D12B9839FE0041FA53 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = D2CF09962B984BC8008FF57A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		AEC5B6D42B9839FE0041FA53 /* AlamofireDynamic */ = {
+		D2CF09992B984BC8008FF57A /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AEC5B6D12B9839FE0041FA53 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = D2CF09962B984BC8008FF57A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
-		AEC5B6D72B983A0B0041FA53 /* SnapKit */ = {
+		D2CF099C2B984BD0008FF57A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AEC5B6D62B983A0B0041FA53 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = D2CF099B2B984BD0008FF57A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		AEC5B6D92B983A0B0041FA53 /* SnapKit-Dynamic */ = {
+		D2CF099E2B984BD0008FF57A /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AEC5B6D62B983A0B0041FA53 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = D2CF099B2B984BD0008FF57A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
-		AEC5B6DC2B983A160041FA53 /* Kingfisher */ = {
+		D2CF09A12B984BD7008FF57A /* Eureka */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AEC5B6DB2B983A160041FA53 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		AEC5B6DF2B983A220041FA53 /* Eureka */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AEC5B6DE2B983A220041FA53 /* XCRemoteSwiftPackageReference "Eureka" */;
+			package = D2CF09A02B984BD7008FF57A /* XCRemoteSwiftPackageReference "Eureka" */;
 			productName = Eureka;
+		};
+		D2CF09A42B984BE1008FF57A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2CF09A32B984BE1008FF57A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -10,66 +10,6 @@ import SnapKit
 
 class HomeViewController: UIViewController {
     
-//    let ButtonSignUp = UIButton()
-//    let ButtonSignIn = UIButton()
-//    
-//    let testingLabel = UILabel()
-//
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        view.backgroundColor = .white
-//        view.addSubview(ButtonSignUp)
-//        view.addSubview(ButtonSignIn)
-//        view.addSubview(testingLabel)
-//        setUpView()
-//        constrainsLayout()
-//        setUpNavBar()
-//    }
-//    
-//    func setUpView( ){
-//
-//        ButtonSignIn.titleLabel?.text = "Sign In"
-//        ButtonSignUp.titleLabel?.text = "Sign Up"
-//        ButtonSignIn.tintColor = .gray
-//        ButtonSignUp.tintColor = .gray
-//        testingLabel.text = "HELLOO"
-//
-//}
-//    func constrainsLayout()
-//    {
-//        ButtonSignIn.snp.makeConstraints { make in
-//            make.center.equalToSuperview()
-//            make.width.equalTo(100)
-//            make.height.equalTo(45)
-//        }
-//        ButtonSignUp.snp.makeConstraints { make in
-//            make.top.equalTo(ButtonSignIn.snp.bottom).offset(10)
-//            make.width.equalTo(100)
-//            make.height.equalTo(45)
-//        }
-//        
-//        testingLabel.snp.makeConstraints { make in
-//            make.center.equalToSuperview()
-//        }
-//        
-//    }
-//    @objc func thePopOver( ){
-//        
-//        let signinVC = SigninViewController( )
-//        navigationController?.pushViewController(signinVC, animated: true)
-//
-//    }
-//    
-//    func setUpNavBar( ){
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(
-//            image: UIImage(systemName: "plus.rectangle.portrait"),
-//            style: .plain,
-//            target: self,
-//            action: #selector(thePopOver)
-//        )
-//    }
-//}
     let signinButton = UIButton()
        let signupButton = UIButton()
        let imageView = UIImageView()
@@ -89,6 +29,18 @@ class HomeViewController: UIViewController {
            signinButton.addTarget(self, action: #selector(signinTapped), for: .touchUpInside)
            signupButton.addTarget(self, action: #selector(signupTapped), for: .touchUpInside)
        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Home Page"
+        view.backgroundColor = .white
+        view.addSubview(ButtonSignUp)
+        view.addSubview(ButtonSignIn)
+
+        setUpView()
+        constrainsLayout()
+    }
+    
+    func setUpView( ){
 
 
        }
