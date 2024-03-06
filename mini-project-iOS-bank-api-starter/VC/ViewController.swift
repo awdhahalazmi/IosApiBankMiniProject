@@ -12,7 +12,7 @@ import SnapKit
 class ViewController: UIViewController {
     
     var token : String?
-    
+
     let usernameLabel = UILabel()
     let emailLabel = UILabel()
     let balanceLabel = UILabel()
@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         setUpView()
         constrainsLayout()
     }
+    
+    
+    
 
     func setUpView( ){
 
