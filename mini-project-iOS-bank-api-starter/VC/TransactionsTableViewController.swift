@@ -38,7 +38,14 @@ class TransactionsTableViewController: UITableViewController {
         cell.textLabel?.text = "Transaction: \(transaction.type)"
         cell.textLabel?.numberOfLines = 2
         cell.detailTextLabel?.text = "Amount: \(transaction.amount)"
+        if transaction.type == "deposit"{
+            cell.detailTextLabel?.text = " + \(transaction.amount)"
+            
+        } else {
+            cell.detailTextLabel?.text = " - \(transaction.amount)"
+        }
         cell.detailTextLabel?.textColor = transaction.type == "deposit" ? #colorLiteral(red: 0.01246238127, green: 0.5615252256, blue: 0.3185392618, alpha: 1) : #colorLiteral(red: 0.5807225108, green: 0.066734083, blue: 0, alpha: 1)
+        
         return cell
     }
     
@@ -64,7 +71,7 @@ class TransactionsTableViewController: UITableViewController {
             }
         }
     }
-    
+ 
 }
 
 

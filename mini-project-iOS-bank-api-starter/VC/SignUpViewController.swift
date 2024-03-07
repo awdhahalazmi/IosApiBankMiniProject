@@ -39,7 +39,7 @@ class SignUpViewController : FormViewController {
             
         }
         
-        <<< TextRow() { row in
+        <<< PasswordRow() { row in
             row.title = "Password"
             row.placeholder = "Enter Password"
             row.tag = "Password"
@@ -53,7 +53,7 @@ class SignUpViewController : FormViewController {
             
         }
         
-        <<< TextRow() { row in
+        <<< EmailRow() { row in
             row.title = "Email"
             row.placeholder = "Enter Email"
             row.tag = "Email"
@@ -80,8 +80,8 @@ class SignUpViewController : FormViewController {
                }
         
                let usernameRow : TextRow? = form.rowBy(tag: "Username")
-               let passwordRow :TextRow? = form.rowBy(tag: "Password")
-               let emailRow :TextRow? = form.rowBy(tag: "Email")
+               let passwordRow :PasswordRow? = form.rowBy(tag: "Password")
+               let emailRow :EmailRow? = form.rowBy(tag: "Email")
 
                let username = usernameRow?.value ?? ""
                let password = passwordRow?.value ?? ""

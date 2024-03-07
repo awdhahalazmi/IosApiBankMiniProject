@@ -23,6 +23,7 @@
 		AE3F50F92B987D7100D7B416 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50F82B987D7100D7B416 /* Transaction.swift */; };
 		AE3F50FB2B98975400D7B416 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50FA2B98975400D7B416 /* Account.swift */; };
 		AE3F50FD2B98BD0000D7B416 /* TransactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50FC2B98BD0000D7B416 /* TransactionDelegate.swift */; };
+		AE3F51012B99AFC300D7B416 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F51002B99AFC300D7B416 /* TransferViewController.swift */; };
 		AEC5B6E22B983C140041FA53 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E12B983C140041FA53 /* HomeViewController.swift */; };
 		AEC5B6E42B983C280041FA53 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E32B983C280041FA53 /* SigninViewController.swift */; };
 		AEC5B6E62B983C6F0041FA53 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */; };
@@ -54,6 +55,7 @@
 		AE3F50F82B987D7100D7B416 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		AE3F50FA2B98975400D7B416 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		AE3F50FC2B98BD0000D7B416 /* TransactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDelegate.swift; sourceTree = "<group>"; };
+		AE3F51002B99AFC300D7B416 /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E12B983C140041FA53 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E32B983C280041FA53 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				AE3F50F42B9854A300D7B416 /* WithdrawViewController.swift */,
 				AE3F50F62B987CEC00D7B416 /* TransactionsTableViewController.swift */,
 				D2CF09A82B985675008FF57A /* DepositViewController.swift */,
+				AE3F51002B99AFC300D7B416 /* TransferViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC5B6E62B983C6F0041FA53 /* SignUpViewController.swift in Sources */,
+				AE3F51012B99AFC300D7B416 /* TransferViewController.swift in Sources */,
 				AE3F50F72B987CED00D7B416 /* TransactionsTableViewController.swift in Sources */,
 				AE3F50F92B987D7100D7B416 /* Transaction.swift in Sources */,
 				D2CF09A92B985675008FF57A /* DepositViewController.swift in Sources */,

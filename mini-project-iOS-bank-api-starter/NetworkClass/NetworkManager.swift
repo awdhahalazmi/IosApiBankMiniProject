@@ -93,6 +93,22 @@ class NetworkManager {
                }
            }
        }
+    
+    
+    func transfer(token: String, amount: Double, to username: String, completion: @escaping (Result<Void, Error>) -> Void) {
+            let url = baseUrl + "transfer/\(username)"
+            let headers: HTTPHeaders = [.authorization(bearerToken: token)]
+            let parameters: [String: Double] = ["amount": amount]
+            
+            AF.request(url, method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).response { response in
+                if let error = response.error {
+                    completion(.failure(error))
+                } else {
+                    completion(.success(()))
+                }
+            }
+        }
+    
    }
     
 
