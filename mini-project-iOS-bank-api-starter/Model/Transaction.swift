@@ -6,9 +6,9 @@
 //
 
 import Foundation
-struct Transaction: Decodable {
-    let senderId: String
-    let receiverId: String
+struct Transaction: Codable {
+    let senderId: Int
+    let receiverId: Int
     let amount: Double
     let type: String
 }

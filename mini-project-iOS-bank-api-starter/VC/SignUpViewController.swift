@@ -67,7 +67,7 @@ class SignUpViewController : FormViewController {
             
         }
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(submitTapped))
+    navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(submitTapped))
         
     }
     @objc func submitTapped() {
@@ -97,6 +97,9 @@ class SignUpViewController : FormViewController {
                 switch success{
                 case .success(let tokenResponse):
                     print(tokenResponse.token)
+                    let vC = ViewController()
+                    vC.token = tokenResponse.token
+                    self.navigationController?.pushViewController(vC, animated: true)
                 case .failure(let error):
                     print(error)
                 }

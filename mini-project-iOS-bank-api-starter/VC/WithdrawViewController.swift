@@ -9,14 +9,17 @@ import UIKit
 import Eureka
 
 class WithdrawViewController: FormViewController {
-    //let token: TokenResponse
+    
+    weak var delegate: TransactionDelegate?
+
+    var token : String?
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        setupForm()
     }
     
     private func setupForm() {
@@ -50,27 +53,40 @@ class WithdrawViewController: FormViewController {
         
         
         let withdraws = AmountChange(amount: withdrawal)
+
         
-//        NetworkManager.shared.withdraw(token:   , amountChange: ) { Result<Void, Error> in
-//            
-//
-//        }
+
+        NetworkManager.shared.withdraw(token: token ?? "", amountChange: withdraws) { result in
+            print(self.token)
+            print(withdraws)
+            if self.token == nil {
+                print("Token not found!!!!")
+            } else {
+                switch result {
+
+                case .success:
+                    print("Withdrawal successful")
+                    
+                case .failure(let error):
+                    print("Withdrawal failed: \(error.localizedDescription)")
+                   
+                }
+
+            }
+              }
+          }
+      }
         
         
-//        NetworkManager.shared.withdraw(token: <#T##String#>, amountChange: <#T##AmountChange#>) { success in
-//            <#code#>
-//        }
-//        
-//        
-//        
-//        
         
         
-    }
+        
+        
+    
 
     
     
-}
+
 
     
 

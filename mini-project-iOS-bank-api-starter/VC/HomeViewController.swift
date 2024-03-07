@@ -10,6 +10,7 @@ import SnapKit
 
 class HomeViewController: UIViewController {
     
+
     let signinButton = UIButton()
        let signupButton = UIButton()
        let imageView = UIImageView()
@@ -29,18 +30,6 @@ class HomeViewController: UIViewController {
            signinButton.addTarget(self, action: #selector(signinTapped), for: .touchUpInside)
            signupButton.addTarget(self, action: #selector(signupTapped), for: .touchUpInside)
        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Home Page"
-        view.backgroundColor = .white
-        view.addSubview(ButtonSignUp)
-        view.addSubview(ButtonSignIn)
-
-        setUpView()
-        constrainsLayout()
-    }
-    
-    func setUpView( ){
 
 
        }
@@ -56,7 +45,7 @@ class HomeViewController: UIViewController {
            signinButton.setImage(UIImage(systemName: "lock"), for: .normal)
            
            
-           signupButton.setTitle(" Sign Up", for: .normal) 
+           signupButton.setTitle(" Sign Up", for: .normal)
            signupButton.backgroundColor =  #colorLiteral(red: 0.01246238127, green: 0.5615252256, blue: 0.3185392618, alpha: 1)
            signupButton.setTitleColor(UIColor.white, for: .normal)
            signupButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
@@ -110,7 +99,7 @@ class HomeViewController: UIViewController {
        
        
        @objc func signupTapped(){
-           let signupVC = SignUpViewController() 
+           let signupVC = SignUpViewController()
            self.navigationController?.pushViewController(signupVC, animated: true)
            
        }

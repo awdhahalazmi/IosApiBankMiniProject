@@ -80,7 +80,21 @@ class NetworkManager {
                 }
             }
         }
-    }
+    func getAdccountDetails(token: String, completion: @escaping (Result<Account, Error>) -> Void) {
+           let url = baseUrl + "account"
+           let headers: HTTPHeaders = [.authorization(bearerToken: token)]
+           
+           AF.request(url, headers: headers).responseDecodable(of: Account.self) { response in
+               switch response.result {
+               case .success(let user):
+                   completion(.success(user))
+               case .failure(let error):
+                   completion(.failure(error))
+               }
+           }
+       }
+   }
+    
 
 
 

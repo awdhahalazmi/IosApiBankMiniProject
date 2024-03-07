@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // MARK: UPDATE THE FOLLOWING LINE FOR YOUR InitialViewController
 
-        window.rootViewController = UINavigationController(rootViewController: ViewController())
+        window.rootViewController = UINavigationController(rootViewController: HomeViewController())
         self.window = window
         self.window?.makeKeyAndVisible()
     }

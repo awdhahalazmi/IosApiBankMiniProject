@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B721A3BF-1D61-44AC-AC5B-E56BF102BAE2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A35179F-CB81-468E-AA23-098CF58D84D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mini-project-iOS-bank-api-starter/VC/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8F619CF-B899-427F-9CC7-8C61670A76B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "withdrawTapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8F619CF-B899-427F-9CC7-8C61670A76B3 - 94649fa81dd5c25e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mini_project_iOS_bank_api_starter.WithdrawViewController.withdrawTapped() -&gt; ()"
+                  moduleName = "mini-project-iOS-bank-api-starter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awdhahalazemi/Desktop/iosproject/IosApiBankMiniProject/mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "C8F619CF-B899-427F-9CC7-8C61670A76B3 - 94649fa81dd5c27f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mini_project_iOS_bank_api_starter.WithdrawViewController.withdrawTapped() -&gt; ()"
+                  moduleName = "mini-project-iOS-bank-api-starter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awdhahalazemi/Desktop/iosproject/IosApiBankMiniProject/mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD7A291E-D155-4235-897F-720CECB0BBD1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "withdrawTapped()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD7A291E-D155-4235-897F-720CECB0BBD1 - 94649fa81dd5c25e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mini_project_iOS_bank_api_starter.WithdrawViewController.withdrawTapped() -&gt; ()"
+                  moduleName = "mini-project-iOS-bank-api-starter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awdhahalazemi/Desktop/iosproject/IosApiBankMiniProject/mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "FD7A291E-D155-4235-897F-720CECB0BBD1 - 94649fa81dd5c27f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mini_project_iOS_bank_api_starter.WithdrawViewController.withdrawTapped() -&gt; ()"
+                  moduleName = "mini-project-iOS-bank-api-starter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/awdhahalazemi/Desktop/iosproject/IosApiBankMiniProject/mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

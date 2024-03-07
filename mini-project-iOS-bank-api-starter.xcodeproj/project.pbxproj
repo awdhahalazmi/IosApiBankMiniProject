@@ -21,13 +21,8 @@
 		AE3F50F52B9854A300D7B416 /* WithdrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50F42B9854A300D7B416 /* WithdrawViewController.swift */; };
 		AE3F50F72B987CED00D7B416 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50F62B987CEC00D7B416 /* TransactionsTableViewController.swift */; };
 		AE3F50F92B987D7100D7B416 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50F82B987D7100D7B416 /* Transaction.swift */; };
-		AEC5B6D32B9839FE0041FA53 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6D22B9839FE0041FA53 /* Alamofire */; };
-		AEC5B6D52B9839FE0041FA53 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6D42B9839FE0041FA53 /* AlamofireDynamic */; };
-		AEC5B6D82B983A0B0041FA53 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6D72B983A0B0041FA53 /* SnapKit */; };
-		AEC5B6DA2B983A0B0041FA53 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6D92B983A0B0041FA53 /* SnapKit-Dynamic */; };
-		AEC5B6DD2B983A160041FA53 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6DC2B983A160041FA53 /* Kingfisher */; };
-		AEC5B6E02B983A220041FA53 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = AEC5B6DF2B983A220041FA53 /* Eureka */; };
-
+		AE3F50FB2B98975400D7B416 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50FA2B98975400D7B416 /* Account.swift */; };
+		AE3F50FD2B98BD0000D7B416 /* TransactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F50FC2B98BD0000D7B416 /* TransactionDelegate.swift */; };
 		AEC5B6E22B983C140041FA53 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E12B983C140041FA53 /* HomeViewController.swift */; };
 		AEC5B6E42B983C280041FA53 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E32B983C280041FA53 /* SigninViewController.swift */; };
 		AEC5B6E62B983C6F0041FA53 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */; };
@@ -57,6 +52,8 @@
 		AE3F50F42B9854A300D7B416 /* WithdrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawViewController.swift; sourceTree = "<group>"; };
 		AE3F50F62B987CEC00D7B416 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		AE3F50F82B987D7100D7B416 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		AE3F50FA2B98975400D7B416 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		AE3F50FC2B98BD0000D7B416 /* TransactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDelegate.swift; sourceTree = "<group>"; };
 		AEC5B6E12B983C140041FA53 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E32B983C280041FA53 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		AEC5B6E52B983C6F0041FA53 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +141,8 @@
 				05CF04E02B97A23C00672FDF /* User.swift */,
 				05CF04DE2B97A22A00672FDF /* AmountChange.swift */,
 				AE3F50F82B987D7100D7B416 /* Transaction.swift */,
+				AE3F50FA2B98975400D7B416 /* Account.swift */,
+				AE3F50FC2B98BD0000D7B416 /* TransactionDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +251,7 @@
 				AE3F50F92B987D7100D7B416 /* Transaction.swift in Sources */,
 				D2CF09A92B985675008FF57A /* DepositViewController.swift in Sources */,
 				05CF04C42B97A0AF00672FDF /* ViewController.swift in Sources */,
+				AE3F50FB2B98975400D7B416 /* Account.swift in Sources */,
 				05CF04D42B97A12600672FDF /* customView.swift in Sources */,
 				05CF04D82B97A15200672FDF /* NetworkManager.swift in Sources */,
 				AE3F50F52B9854A300D7B416 /* WithdrawViewController.swift in Sources */,
@@ -261,6 +261,7 @@
 				AEC5B6E42B983C280041FA53 /* SigninViewController.swift in Sources */,
 				05CF04DF2B97A22A00672FDF /* AmountChange.swift in Sources */,
 				05CF04DB2B97A1FA00672FDF /* TokenResponse.swift in Sources */,
+				AE3F50FD2B98BD0000D7B416 /* TransactionDelegate.swift in Sources */,
 				05CF04C22B97A0AF00672FDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

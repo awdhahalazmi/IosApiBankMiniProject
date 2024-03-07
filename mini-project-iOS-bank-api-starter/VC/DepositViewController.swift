@@ -12,8 +12,10 @@ import SnapKit
 import UIKit
 
 class DepositViewController : FormViewController{
+    weak var delegate: TransactionDelegate?
     
     var token : String?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,7 @@ class DepositViewController : FormViewController{
     private func setupForm(){
         
         form +++ Section("Deposit Amount")
-        <<< IntRow() { row in
+        <<< DecimalRow { row in
             row.title = "Deposit Amount"
             row.placeholder = "Enter Deposit Amount"
             row.tag = "Deposit"
@@ -39,9 +41,15 @@ class DepositViewController : FormViewController{
                 }
             }
         }
+        <<< ButtonRow() { row in
+            row.title = "Deposit"
+        }.onCellSelection { _, _ in
+            self.depositTapped()
+        }
+    
     }
     
-    @objc func submitTapped() {
+    @objc func depositTapped() {
            
         
         let errors = form.validate()
@@ -49,30 +57,32 @@ class DepositViewController : FormViewController{
                     presentAlertWithTitle(title: "🚨", message: "\(errors.count) fields are missing")
                     return
                 }
-                let depositRow: IntRow? = form.rowBy(tag: "Deposit")
+                let depositRow: DecimalRow? = form.rowBy(tag: "Deposit")
         
-                let Deposit = depositRow?.value ?? 0
-                
+        let deposit = depositRow?.value ?? 0.0
+        let deposits = AmountChange(amount: deposit)
 
+
+        NetworkManager.shared.deposit(token: token ?? "", amountChange: deposits) { result in
+            print(self.token)
+            print(deposits)
+            if self.token == nil {
+                print("Token not found!!!!")
+            } else {
+                switch result {
                     
-//                let pet = Pet(id: nil, name: name, adopted: true, image: imageUrl, age: age, gender: gender)
-//                    print(pet)
-        
-                
-        
-        NetworkManager.shared.deposit(token: token, amountChange: Deposit ){ success in
-            
-            DispatchQueue.main.async {
-         
-                switch success{
-                case .success(let tokenResponse):
-                    print()
+                case .success:
+                    print("Deposit successful")
+                    
                 case .failure(let error):
-                    print(error)
+                    print("Deposit failed: \(error.localizedDescription)")
+                    
                 }
-                }
+                
             }
-          }
+        }}
+
+
     private func presentAlertWithTitle(title: String, message: String) {
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
