@@ -45,6 +45,8 @@ class DepositViewController : FormViewController{
             row.title = "Deposit"
         }.onCellSelection { _, _ in
             self.depositTapped()
+            self.dismiss(animated: true)
+
         }
     
     }

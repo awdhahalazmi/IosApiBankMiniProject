@@ -14,8 +14,8 @@
             filePath = "mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "withdrawTapped()"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "mini-project-iOS-bank-api-starter/VC/WithdrawViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "withdrawTapped()"
             landmarkType = "7">
             <Locations>

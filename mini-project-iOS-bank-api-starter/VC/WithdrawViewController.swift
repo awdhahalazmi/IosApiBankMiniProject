@@ -43,6 +43,7 @@ class WithdrawViewController: FormViewController {
             row.title = "Withdraw"
         }.onCellSelection { _, _ in
             self.withdrawTapped()
+            self.dismiss(animated: true)
         }
     }
     

@@ -114,9 +114,9 @@ class ViewController: UIViewController,  UIAdaptivePresentationControllerDelegat
                 }
         imageprofile.snp.makeConstraints { make in
             make.leading.equalTo(cardView.snp.trailing).offset(-100)
-            make.centerY.equalToSuperview().offset(5)
+            make.centerY.equalToSuperview().offset(40)
             make.width.equalTo(100)
-            make.height.equalTo(100)
+            make.height.equalTo(120)
         }
 
         emailLabel.snp.makeConstraints { make in
@@ -259,6 +259,7 @@ extension ViewController: TransactionDelegate {
         fetch()
     }
 }
+
 
 
 
